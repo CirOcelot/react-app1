@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Square extends React.Component {su
+class Square extends React.Component {
 	render() {
 		return (
-			<button className="square" onClick={() => this.props.onClick ({value: '👌'})}>
+			<button className="square" onClick={() => this.props.onClick ({value:'👌'})}>
 			{this.props.value}
 			</button>
 	);
@@ -22,7 +22,7 @@ class Board extends React.Component {
 
 	handleClick(i) {
 		const squares = this.state.squares.slice();
-		squares[i] = 'X';
+		squares[i] = '👌';
 		this.setState({squares: squares});
 	}
 
