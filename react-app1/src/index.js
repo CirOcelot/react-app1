@@ -24,7 +24,7 @@ class Board extends React.Component {
 		squares[i] = this.state.xIsNext ? '🤞' : '👌';
 		this.setState({
 			squares: squares,
-		xIsNext: !this.state.xIsNext,
+			xIsNext: !this.state.xIsNext,
 		});
 	}
 
@@ -38,7 +38,7 @@ class Board extends React.Component {
 	}
 
 	render() {
-		const status = 'Next player: 🤞';
+		const status = 'Next player: ' + (this.state.xIsNext ? '🤞' : '👌');
 
 		return (
 			<div>
